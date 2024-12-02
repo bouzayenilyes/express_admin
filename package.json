@@ -1,0 +1,37 @@
+{
+  "name": "express-tn",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^17.0.0",
+    "@angular/cdk": "^17.3.10",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/material": "^17.3.10",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@daypilot/daypilot-lite-angular": "^3.30.1",
+    "@mobiscroll/angular-lite": "^4.10.9",
+    "@ngrx/effects": "^17.0.0",
+    "@ngrx/store": "^17.0.0",
+    "chart.js": "^4.4.7",
+    "jwt-decode": "^4.0.0",
+    "primeng": "^17.18.12",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.0.0",
+    "@angular/cli": "^17.0.0",
+    "@angular/compiler-cli": "^17.0.0",
+    "typescript": "~5.2.2"
+  }
+}
