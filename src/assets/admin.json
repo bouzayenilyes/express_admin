@@ -1,0 +1,17 @@
+{
+    "adminUsers": [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "role": "admin",
+            "email": "admin@example.com",
+            "permissions": [
+                "create_user",
+                "edit_user",
+                "delete_user",
+                "view_dashboard",
+                "manage_settings"
+            ]
+        }
+    ]
+}
