@@ -6,70 +6,43 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   template: `
-    <header class="header">
-      <h1 class="logo">ExpressTN</h1>
-      <nav>
-        <a routerLink="/livreur" routerLinkActive="active">Livreur</a>
-        <a routerLink="/paiements" routerLinkActive="active">Paiements</a>
-        <a routerLink="/statistiques" routerLinkActive="active">Statistiques</a>
-        <a routerLink="/mes-colis" routerLinkActive="active">Colis</a>
-      </nav>
-      <div class="user-profile">
-        <img src="assets/user.png" alt="User profile" />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ExpressTN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/livreur" routerLinkActive="active">Livreur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/paiements" routerLinkActive="active">Paiements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/statistiques" routerLinkActive="active">Statistiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/mes-colis" routerLinkActive="active">Colis</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <img src="assets/user.png" alt="User profile" class="rounded-circle" style="width: 40px; height: 40px;" />
+          </div>
+        </div>
       </div>
-    </header>
+    </nav>
   `,
   styles: [`
     :host {
       display: block;
-      height: 64px;
     }
-
-    .header {
-      background-color: #333;
-      color: white;
-      padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 64px;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      margin: 0;
-    }
-
-    nav {
-      display: flex;
-      gap: 2rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-    }
-
-    nav a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    nav a.active {
-      background-color: #555;
-    }
-
-    .user-profile img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      cursor: pointer;
+    
+    .nav-link.active {
+      color: #fff !important;
+      font-weight: bold;
     }
   `]
 })

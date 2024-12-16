@@ -21,6 +21,7 @@
     "@mobiscroll/angular-lite": "^4.10.9",
     "@ngrx/effects": "^17.0.0",
     "@ngrx/store": "^17.0.0",
+    "bootstrap": "^5.3.3",
     "chart.js": "^4.4.7",
     "jwt-decode": "^4.0.0",
     "primeng": "^17.18.12",

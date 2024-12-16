@@ -27,12 +27,17 @@
           },
           "options": {
             "assets": [],
-            "index": "src/index.html",
             "browser": "src/main.ts",
+            "index": "src/index.html",
             "outputPath": "dist/demo",
             "polyfills": ["zone.js"],
-            "scripts": [],
-            "styles": ["src/global_styles.css"],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/global_styles.css"
+            ],
             "tsConfig": "tsconfig.app.json"
           }
         },
@@ -49,10 +54,8 @@
           "defaultConfiguration": "development"
         }
       },
-      "prefix": "app",
       "projectType": "application",
       "root": "",
-      "schematics": {},
       "sourceRoot": "src"
     }
   },
