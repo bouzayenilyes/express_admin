@@ -72,7 +72,7 @@ export class AppComponent {
   title = 'ExpressTN';
 
 
-  setTitle(newTitle: string): void {
+  updateTitle(newTitle: string): void {
     this.title = newTitle;
   }
 }
