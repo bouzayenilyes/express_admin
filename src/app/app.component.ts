@@ -70,4 +70,9 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class AppComponent {
   title = 'ExpressTN';
+
+
+  setTitle(newTitle: string): void {
+    this.title = newTitle;
+  }
 }
